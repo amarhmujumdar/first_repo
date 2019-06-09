@@ -2,22 +2,31 @@ pipeline
     {
 
         agents any
+
         stages
 	     {
 
 	         stage('Init')
 		    
 		    {
+                       steps
+		         
+			  {
 
-		       echo "Testing"
+		           echo "Testing"
+                          }
 
 		    }
 
 		  stage('Build')
 
 		     {
+                        steps
+			   
+			   {
 
-		        echo "Building ..."
+		             echo "Building ..."
+                           }
 
 		     }
 
@@ -25,7 +34,12 @@ pipeline
 
 		     {
 
-		        echo "Code Deployed..."
+		        steps
+			
+			{
+			
+			echo "Code Deployed..."
+                        }
 
 		     }	
 
