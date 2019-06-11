@@ -54,6 +54,10 @@ pipeline
 				         {
 					 
 					    echo 'This will run only if successful'
+
+					    mail (to: 'amarhmujumdar@gmail.com', 
+					    subject: "Failed Pipeline: ${currentBuild.fullDisplayName}", 
+					    body: "Something is wrong")
 					 }
 				 
 				 failure 
