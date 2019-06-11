@@ -42,10 +42,11 @@ pipeline
 				      inputmessage:'Approve Production Deployment'
 
 				   }
-
+                           
+			       build job : 'Copying artifacts - apache'  
 			   }
 
-			   Build job : 'Copying artifacts - apache'
+			   
 
 		        steps
 			
