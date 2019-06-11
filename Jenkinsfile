@@ -33,6 +33,19 @@ pipeline
 		  stage('Deploy')
 
 		     {
+                        steps
+
+			   {
+
+			      timeoute(time:5,unit:"Days")
+                                   {
+				      inputmessage:'Approve Production Deployment'
+
+				   }
+
+			   }
+
+			   Build job : 'Copying artifacts - apache'
 
 		        steps
 			
