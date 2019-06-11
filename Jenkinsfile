@@ -37,7 +37,7 @@ pipeline
 
 			   {
 
-			      timeoute(time:5,unit:"Days")
+			      timeout(time:5,unit:"Days")
                                    {
 				      inputmessage:'Approve Production Deployment'
 
